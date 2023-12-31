@@ -33,6 +33,10 @@ class Tarea implements Proyecto {
   void eliminarSubtarea(int index) {
     subtareas.removeAt(index);
   }
+
+  String convertirCadena() {
+    return '$nombre|$descripcion|$estado';
+  }
 }
 
 enum EstadoTarea { realizada, postergada, norealizada }
